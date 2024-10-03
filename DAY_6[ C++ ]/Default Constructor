@@ -1,0 +1,32 @@
+//Write a C++ program to implement the Default constructor.
+#include<iostream>
+#include <iostream>
+#include <string>
+
+class Person {
+private:
+    std::string name;
+    int age;
+
+public:
+   
+    Person() {
+        name = "JUNGKOOK";
+        age = 1;
+    }
+
+
+    void displayInfo() {
+        std::cout << "Name: " << name << ", Age: " << age << std::endl;
+    }
+};
+
+int main() {
+    
+    Person person1;
+
+   
+    person1.displayInfo();
+
+    return 0;
+}
